@@ -24,6 +24,15 @@ int main()
     Node * g = new Node(80);
     Node * h = new Node(90);
     Node * i = new Node(100);
+    root->right = a;
+    root->left = b;
+    b->right= d;
+    b->left = e;
+    d->right = i;
+    d->left = h;
+    e->left = g;
+    a->left= e;
+    e->right= f;
     
     return 0;
 }
