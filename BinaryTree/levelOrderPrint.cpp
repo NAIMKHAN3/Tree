@@ -17,9 +17,14 @@ void levelOrderPrint (Node* root){
     queue<Node*> q;
     q.push(root);
     while(!q.empty()){
+        //step 1:
         Node* temp = q.front();
         q.pop();
+
+        //step2:
         cout << temp->val << " ";
+
+        //step3:
         if(temp->left) q.push(temp->left);
         if(temp->right) q.push(temp->right);
     }
